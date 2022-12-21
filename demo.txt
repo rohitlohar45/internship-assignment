@@ -1,0 +1,54 @@
+<section className=''>
+      <div className='ui grid'>
+        {products.map((product) => {
+            const { images, title, description,price } = product;
+          return (
+
+            <><div class="ui card">
+      <div class="image">
+        <img src={images} alt={title} />
+      </div>
+      <div class="content">
+        <div class="header">{title}</div>
+        <div class="meta">
+          <span class="date">MRP: {price}</span>
+        </div>
+        <div class="description">{description}</div>
+      </div>
+      <div class="extra content">
+        <Link to={`/products/${product.id}`}>Details</Link>
+      </div>
+      </div>
+        <section className='section product'>
+        <h5></h5>
+        
+      </section></>
+          );
+        })}
+      </div>
+    </section>
+
+
+    <><div class="ui card">
+      <div class="image">
+        <img src={images} alt={title} />
+      </div>
+      <div class="content">
+        <div class="header">{title}</div>
+        <div class="meta">
+          <span class="date">MRP: {price}</span>
+        </div>
+        <div class="description">{description}</div>
+      </div>
+      <div class="extra content">
+        <Link to='/products'>Details</Link>
+      </div>
+      </div>
+        <section className='section product'>
+        <h5></h5>
+        
+      </section></>
+
+
+
+                    {/* {images.map(image => <img src={image} alt={title} />)} */}
